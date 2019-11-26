@@ -7,7 +7,8 @@ import sys
 from geopy.geocoders import Nominatim, GoogleV3
 
 def main():
-
+   inputfile=str(sys.argv[1])
+   io = pandas.read_csv(inputfile, index_col=None, header=0, sep=",")
    # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'final_project.settings')
    # try:
    #     from django.core.management import execute_from_command_line
